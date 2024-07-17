@@ -28,7 +28,7 @@
 
         <a-marker preset="hiro">
 
-<a-entity
+            <a-entity
                     id="bowser-model"
                     scale="0.010995758220497871 0.010995758220497871 0.010995758220497871"
                     animation-mixer="loop: repeat"
@@ -37,7 +37,7 @@
                     gesture-handler
                 ></a-entity>
             
-            <a-box position='0 0.5 0' color="red"></a-box>
+            <a-box position='0 0.5 0' color="red" scale = "0.5 0.01 0.5"></a-box>
         </a-marker>
 
 
@@ -54,14 +54,7 @@
                 cursor="fuse: false; rayOrigin: mouse;"
                 id="markerA"
             >
-                <a-entity
-                    id="bowser-model"
-                    scale="0.010995758220497871 0.010995758220497871 0.010995758220497871"
-                    animation-mixer="loop: repeat"
-                    gltf-model="#animated-asset"
-                    class="clickable"
-                    gesture-handler
-                ></a-entity>
+                 <a-box position='0 0.5 0' color="red" scale = "0.5 0.01 0.5"></a-box>
             </a-marker>
 
 
@@ -73,9 +66,7 @@
                 url="assets/pattern-dance.patt"
                 raycaster="objects: .clickable"
                 emitevents="true"
-                cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA"
-            >
+                cursor="fuse: false; rayOrigin: mouse;">
                 <a-box position='0 0.5 0' color="yellow"></a-box>
             </a-marker>
 
